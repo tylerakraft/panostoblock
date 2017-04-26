@@ -1,0 +1,11 @@
+Here's an example of the query that I run.  This api request returns up to 600 results over the last 30 days where the source zone is the internet and the severity is medium or higher.
+
+https://Firewall-IP/api/?type=log&log-type=threat&nlogs=600&query=%28severity+geq+medium%29+and+%28receive_time+in+last-30-days%29+and+%28+zone.src+eq+Internet+%29&key=ApiKey
+
+The result returns xml with a job number.  The script pulls the job number and then runs it through the following api request.
+
+https://Firewall-IP/api/?type=log&action=get&job-id=JobNumber&key=ApiKey
+
+
+
+Please reference that API documentation for your version of PanOS.  API documentation is available from Palo Alto Networks
