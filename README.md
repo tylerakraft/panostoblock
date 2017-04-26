@@ -3,7 +3,7 @@ This python script uses the PanOS api to generate an external blocklist that you
 
 ### Requirements ###
 
-This script uses the untangle, time, os and requests modules so be sure that they're installed 
+This script uses the untangle, time, os and requests modules so be sure that they're installed
 
 ### Usage ###
 
@@ -19,5 +19,6 @@ This script uses the untangle, time, os and requests modules so be sure that the
 ### Notes ###
 
 Be sure to look through the documentation for your version of PanOS to ensure you're api calls are correct.  
+I run this on the same server running our internal wiki so that the blocklist can be easily referenced.
 I run this script on Python 3.  Don't know if it works with 2.  
 I'm still new to python so I'm sure this isn't optimized or pretty.  Be gentle.  
