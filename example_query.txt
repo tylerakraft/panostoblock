@@ -5,3 +5,7 @@ https://Firewall-IP/api/?type=log&log-type=threat&nlogs=600&query=%28severity+ge
 The result returns xml with a job number.  The script pulls the job number and then runs it through the following api request.
 
 https://Firewall-IP/api/?type=log&action=get&job-id=JobNumber&key=ApiKey
+
+
+
+Please reference that API documentation for your version of PanOS.  API documentation is available from Palo Alto Networks
